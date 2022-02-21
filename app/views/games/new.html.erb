@@ -1,7 +1,7 @@
 <h1>New Game</h1>
 
 <div class="letters">
-<% $letters.each do |letter| %>
+<% @letters.each do |letter| %>
 <div class="individual-letter"><h1><%= letter %></h1></div>
 <% end %>
 </div><br><br>
@@ -9,5 +9,7 @@
   <label for="fname">Type the longest word you can!</label><br>
   <input type="text" name="attempt" value="<%= @attempt%>">
   <input type="submit" value="Play">
+  <input type="hidden" name="setletters" value="<%=@letters%>">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
 </form>
