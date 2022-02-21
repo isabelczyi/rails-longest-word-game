@@ -1,0 +1,28 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$form-bg: #f8f4e5;
+$font-size: 14pt;
+$font-face: 'Fjalla One';
+$font-color: #2A293E;
+
+a {
+  text-decoration: none;
+}
+
+.letters {
+  display: flex;
+}
+
+.individual-letter {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(19, 103, 136);
+  color: #fff;
+  border: 3px solid #000;
+  text-align: center;
+  margin: 5px 5px 5px 5px;
+  vertical-align: middle;
+  filter: drop-shadow(5px 5px 4px #696969)
+}
